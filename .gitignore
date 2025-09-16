@@ -1,0 +1,5 @@
+node_modules/
+*.db
+.env
+*.sql
+migration_lock.toml

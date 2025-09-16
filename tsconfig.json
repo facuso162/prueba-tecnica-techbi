@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "target": "es2020", // Version de JS a la que se transpila
+    "module": "commonjs", // Sistema de módulos a la que se transpila
+    "rootDir": "./src", // De donde saca el código fuente
+    "outDir": "./dist", // Donde pone el código transpilado
+    "strict": true, // Comprobaciones estrictas de tipos
+    "esModuleInterop": true, // Permite utilizar import/export y luego transpilar a require/module.exports
+    "skipLibCheck": true // Se saltea la comprobacion de tipos en las librerías (mas rapido)
+  },
+  "include": ["src/**/*"] // Con ** se incluyen subcarpetas, con * todos los archivos de esas subcarpetas
+}
