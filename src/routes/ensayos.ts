@@ -3,7 +3,7 @@ import {
   ensayoPostRequestBodySchema,
   ensayoPutRequestBodySchema,
 } from "../validation/schemas";
-import { success, z } from "zod";
+import { z } from "zod";
 import {
   createEnsayo,
   getEnsayos,
@@ -13,11 +13,6 @@ import {
 } from "../data/ensayos";
 
 export const ensayosRouter = express.Router();
-
-// Hay que estandarizar las respuestas del backend,
-// esto se puede hacer devolviendo {success: boolean, data?: any, message?: string}
-// si success es true, data contiene la data solicitada
-// si success es false, message contiene el error
 
 // POST /ensayos
 ensayosRouter.post("/", async (req, res) => {
